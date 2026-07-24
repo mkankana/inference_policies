@@ -100,7 +100,7 @@ Results that cannot be replicated are not valid results.
 
 === Audit Process
 
-For audit process guidelines see [MLPerf Audit Guidelines.](MLPerf_Audit_Guidelines.adoc)
+For audit process guidelines see link:MLPerf_Audit_Guidelines.adoc[MLPerf Audit Guidelines].
 
 In each round, up to two submissions will be audited: one at random from all submissions, and either zero or one selected by the review committee. A "submission" for audit purposes shall denote a combination of a submitter and a platform (equivalent to a line in the results table). Only Available submissions in Closed division are auditable.
 
