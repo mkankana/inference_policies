@@ -1041,7 +1041,7 @@ Since a retrieval accuracy threshold has not yet been established, submitters ar
 
 Q: Which pipeline parameters are fixed for all submissions?
 
-A: All submitters must use the following parameters. Quantization is allowed within the rules of MLPerf Inference.
+A: All submitters must use the following parameters. Quantization is allowed within the rules of MLPerf Inference. All component prompt prefix are to be ramined as in the reference implementation.
 
 |===
 |Component |Parameter |Fixed value
@@ -1057,7 +1057,6 @@ A: All submitters must use the following parameters. Quantization is allowed wit
 |Reranking |Model |colbert-ir/colbertv2.0
 |Reranking |`--top_k_reranking` |10
 |Multi-shot |Max retrieval iterations |5
-|Multi-shot |Max sub-queries per iteration |3
 |Query writer, sufficiency checker, answer generation |Model |gpt-oss-120B-mxfp4
 |Query writer, sufficiency checker, answer generation |reasoning / temperature / top_p / top_k / max_tokens |medium / 1 / 1 / -1 / 10240
 |Document grader |Model |gpt-oss-20B-mxfp4
