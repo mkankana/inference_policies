@@ -1041,7 +1041,7 @@ Since a retrieval accuracy threshold has not yet been established, submitters ar
 
 Q: Which pipeline parameters are fixed for all submissions?
 
-A: All submitters must use the following parameters. Quantization is allowed within the rules of MLPerf Inference. All component prompt prefix are to be ramined as in the reference implementation.
+A: All submitters must use the following parameters. Quantization is allowed within the rules of MLPerf Inference.
 
 |===
 |Component |Parameter |Fixed value
@@ -1063,6 +1063,8 @@ A: All submitters must use the following parameters. Quantization is allowed wit
 |Document grader |reasoning / temperature / top_p / top_k / max_tokens |medium / 1 / 1 / -1 / 4096
 |Evaluation |LLM judge model |meta-llama/Llama-3.1-8B-Instruct
 |===
+
+The prompts used by each component (query writer, document grader, sufficiency checker, answer generation, and LLM judge) must not be modified from the reference implementation.
 
 === Audit
 
